@@ -2,4 +2,4 @@
 Creacion e innovacion de una piramide
 
 # Front end
-Modificacion del front
+Modificacion del front end.
