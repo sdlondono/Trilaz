@@ -1,35 +1,26 @@
 {
-  "name": "Trilaz",
-  "version": "0.0.1",
+  "name": "TrilazCH",
+  "version": "1.0.0",
+  "description": "Una trilaz con mongo ",
+  "author": "Christian",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
-  },
-  "rnpm" : {
-    "assets" : [
-      "./src/assets/fonts/"
-    ]
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate"
   },
   "dependencies": {
-    "native-base": "^2.10.0",
-    "react": "16.6.3",
-    "react-native": "0.57.8",
-    "react-native-linear-gradient": "^2.5.3",
-    "react-navigation": "^3.0.9",
-    "react-redux": "^6.0.0",
-    "redux": "^4.0.1",
-    "redux-logger": "^3.0.6",
-    "redux-promise": "^0.6.0",
-    "redux-thunk": "^2.3.0"
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.4.0",
+    "express": "^4.16.4",
+    "vuetify": "^1.5.0",
+    "vuetify-loader": "^1.2.0",
+    "@nuxtjs/axios": "^5.3.6"
   },
   "devDependencies": {
-    "babel-jest": "23.6.0",
-    "jest": "23.6.0",
-    "metro-react-native-babel-preset": "0.51.1",
-    "react-test-renderer": "16.6.3"
-  },
-  "jest": {
-    "preset": "react-native"
+    "nodemon": "^1.18.9",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2"
   }
 }
