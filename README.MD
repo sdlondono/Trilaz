@@ -7,8 +7,5 @@ The best application mobile to winner more pay in you wallet
 ## Instructions
 
 - Install dependencies all
-    ```
-        npm install
-
-    ```
+    ```npm install```
 - Variables of 7 characters
